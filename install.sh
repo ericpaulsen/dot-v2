@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# clone repo into ~/
-git clone git@github.com:ericpaulsen/dot-v2.git
-
 # Add GitHub as a known host
 echo "adding GitHub as a known host"
 ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
@@ -13,7 +10,7 @@ echo "installing starship"
 sh -c "$(curl -fsSL https://starship.rs/install.sh)" -y -f
 
 # Install fonts
-cp ~/dot-v2/fonts /usr/share/fonts
+cp ~/.config/coderv2/dotfiles/fonts /usr/share/fonts
 
 echo "installing extensions..."
 # Install extensions & set VSCode prefs
@@ -21,7 +18,7 @@ code-server --install-extension streetsidesoftware.code-spell-checker
 code-server --install-extension HashiCorp.terraform
 code-server --install-extension ms-azuretools.vscode-docker
 code-server --install-extension golang.Go
-cp -f ~/dotfiles/settings.json /home/coder/.local/share/code-server/User/settings.json
+cp -f ~/.config/coderv2/dotfiles/settings.json /home/coder/.local/share/code-server/User/settings.json
 
 # Install fish & make it default shell
 echo "installing fish shell"
@@ -30,8 +27,8 @@ sudo apt update
 sudo apt-get install -y fish
 
 echo "copying fish & starship config"
-cp -f ~/dot-v2/.config/fish/config.fish ~/.config/fish/config.fish
-cp -f ~/dot-v2/.config/starship.toml ~/.config/starship.toml
+cp -f ~/.config/coderv2/dotfiles/.config/fish/config.fish ~/.config/fish/config.fish
+cp -f ~/.config/coderv2/dotfiles/.config/starship.toml ~/.config/starship.toml
 
 echo "changing shell"
 sudo chsh -s /usr/bin/fish $USER
