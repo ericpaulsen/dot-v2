@@ -1,0 +1,21 @@
+[user]
+
+email = ericpaulsen@coder.com
+name = Eric Paulsen
+
+[init]
+
+defaultBranch = master
+
+[alias]
+
+s = status
+
+p = pull
+
+c = clone
+
+# list all aliases
+
+aliases = config --get-regexp alias
+

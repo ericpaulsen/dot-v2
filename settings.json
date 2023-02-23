@@ -1,0 +1,72 @@
+{ 
+    "editor.fontFamily": "'Input'",
+    "editor.fontLigatures": true,
+    "editor.fontWeight": "500",
+    "workbench.sideBar.location": "right",
+    "terminal.integrated.confirmOnExit": "never",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.defaultProfile.linux": "fish",
+    
+    "[terraform]": {
+        "editor.formatOnSave": true
+    },
+    "terraform.languageServer": {
+          "external": true,
+          "args": [
+            "serve"
+          ]
+    },
+
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "git.autofetch": true,
+    "cSpell.ignoreWords": [
+        "autofetch",
+        "donot",
+        "ericsettingssync",
+        "git",
+        "info",
+        "live",
+        "msg",
+        "server",
+        "settings",
+        "show",
+        "devurls",
+        "proxied",
+        "dotfiles",
+        "envproxy",
+        "kubectl",
+        "envagent",
+        "OIDC",
+        "cemanager",
+        "CVMs",
+        "kubernetes",
+        "sysbox",
+        "sbin",
+        "distro"
+    ],
+
+    "workbench.editor.enablePreview": false,
+    "diffEditor.renderSideBySide": false,
+    "cSpell.userWords": [
+        "letsencrypt"
+    ],
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.cursorStyle": "underline",
+    "editor.suggestSelection": "first",
+    "editor.wordWrap": "on",
+    "editor.renderWhitespace": "all",
+    "docker.showStartPage": false,
+    "workbench.startupEditor": "none",
+    "github.gitAuthentication": false,
+    "go.toolsManagement.autoUpdate": true,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "files.exclude": {
+        "**/.git": false
+    },
+    "terminal.integrated.enableMultiLinePasteWarning": false
+}
