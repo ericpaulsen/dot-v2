@@ -29,12 +29,12 @@ sudo apt-add-repository ppa:fish-shell/release-3
 sudo apt update
 sudo apt-get install -y fish
 
-echo "changing shell"
-sudo chsh -s /usr/bin/fish $USER
-
 echo "copying fish & starship config"
 cp -f ~/dot-v2/.config/fish/config.fish ~/.config/fish/config.fish
 cp -f ~/dot-v2/.config/starship.toml ~/.config/starship.toml
+
+echo "changing shell"
+sudo chsh -s /usr/bin/fish $USER
 
 # Install eksctl
 curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
