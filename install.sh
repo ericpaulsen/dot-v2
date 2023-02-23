@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # clone repo into ~/
-git clone 
+git clone git@github.com:ericpaulsen/dot-v2.git
 
 # Add GitHub as a known host
 echo "adding GitHub as a known host"
