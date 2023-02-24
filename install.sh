@@ -5,10 +5,6 @@ echo "installing starship"
 # Install Starship
 sh -c "$(curl -fsSL https://starship.rs/install.sh)" -y -f
 
-# Install fonts
-echo "installing fonts"
-sudo cp -rf ~/.config/coderv2/dotfiles/fonts /usr/share/fonts
-
 echo "installing extensions..."
 # Install extensions & set VSCode prefs
 code-server --install-extension streetsidesoftware.code-spell-checker
