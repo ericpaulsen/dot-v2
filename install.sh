@@ -11,7 +11,9 @@ code-server --install-extension streetsidesoftware.code-spell-checker
 code-server --install-extension HashiCorp.terraform
 code-server --install-extension ms-azuretools.vscode-docker
 code-server --install-extension golang.Go
-cp -f ~/.config/coderv2/dotfiles/settings.json /home/coder/.local/share/code-server/Machine/settings.json
+
+echo "copying VSCode settings"
+cp -f /home/coder/.config/coderv2/dotfiles/settings.json /home/coder/.local/share/code-server/Machine/settings.json
 
 # Install fish & make it default shell
 echo "installing fish shell"

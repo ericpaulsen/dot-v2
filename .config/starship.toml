@@ -1,6 +1,4 @@
 format = """
-$username\
-$hostname\
 $shlvl\
 $kubernetes\
 $directory\
@@ -17,6 +15,18 @@ $line_break\
 $status\
 $shell\
 $character"""
+
+[memory_usage]
+disabled = false
+threshold = -1
+symbol = ' '
+style = 'bold dimmed green'
+
+[username]
+disabled = true
+
+[hostname]
+disabled = true
 
 add_newline = false
 
