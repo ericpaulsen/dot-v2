@@ -44,6 +44,3 @@ echo "copying fish & starship config"
 sudo cp -f ~/.config/coderv2/dotfiles/.config/fish/config.fish ~/.config/fish/config.fish
 sudo cp -f ~/.config/coderv2/dotfiles/.config/starship.toml ~/.config/starship.toml
 
-echo "install gke auth plugin"
-sudo apt-get install google-cloud-sdk-gke-gcloud-auth-plugin
-
