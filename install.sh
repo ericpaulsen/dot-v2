@@ -44,3 +44,4 @@ echo "copying fish & starship config"
 sudo cp -f ~/.config/coderv2/dotfiles/.config/fish/config.fish ~/.config/fish/config.fish
 sudo cp -f ~/.config/coderv2/dotfiles/.config/starship.toml ~/.config/starship.toml
 
+echo "done"
